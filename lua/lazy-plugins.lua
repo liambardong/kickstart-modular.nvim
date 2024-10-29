@@ -48,7 +48,7 @@ require('lazy').setup({
   require 'kickstart.plugins.neo-tree',
 
   require 'custom.plugins.plugins.lazygit',
-
+  require 'custom.plugins.plugins.harpoon2',
   -- Current not working. Need to look into this later
   -- require 'kickstart.plugins.nvim-jdtls',
 
