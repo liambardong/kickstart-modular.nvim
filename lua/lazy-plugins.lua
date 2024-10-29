@@ -20,7 +20,6 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
-
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
@@ -35,14 +34,23 @@ require('lazy').setup({
   require 'kickstart/plugins/conform',
 
   require 'kickstart/plugins/cmp',
-
-  require 'kickstart/plugins/tokyonight',
+  -- colorscheme plugins
+  --require 'kickstart/plugins/tokyonight',
+  --require 'kickstart.plugins.solarized-osaka',
+  require 'kickstart.plugins.kanagawa',
 
   require 'kickstart/plugins/todo-comments',
 
   require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
+
+  require 'kickstart.plugins.neo-tree',
+
+  require 'custom.plugins.plugins.lazygit',
+
+  -- Current not working. Need to look into this later
+  -- require 'kickstart.plugins.nvim-jdtls',
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
@@ -57,7 +65,6 @@ require('lazy').setup({
   -- require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
   -- require 'kickstart.plugins.autopairs',
-  -- require 'kickstart.plugins.neo-tree',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
